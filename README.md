@@ -6,4 +6,4 @@ Login page with notifications system using NodeJS for Examly
 * Considering the requirements visualizing database as tables makes more sense than visualizing the data as a bunch of documents.
 
 ## Database Schema ##
-![](images/schema.png)
+![](image/schema.png)
