@@ -7,3 +7,12 @@ Login page with notifications system using NodeJS for Examly
 
 ## Database Schema ##
 ![](image/schema.png)
+* Entity will help us to know what the notification is about. For example, a notification can be about a creation of a course, course completion of a student etc. To get the details of any entity, all we need is to know entity table’s primary key value. This value will be referred as entityId.
+* Entity types are the different types of notifications. To identify each entity, we will give an ID to each and every entity type.
+* Read and Clicked maintains the asked metadata.
+
+## API ##
+
+
+
+## Performance Metrics ##
