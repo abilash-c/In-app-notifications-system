@@ -1,4 +1,4 @@
-Login page with notifications system using NodeJS for Examly
+Login page with notifications system using NodeJS with express for Examly
 
 ## Database Type ##
 * Since we are storing structured data i went with MySQL.
