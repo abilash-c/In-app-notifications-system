@@ -11,8 +11,23 @@ Login page with notifications system using NodeJS with express for Examly
 * Entity types are the different types of notifications. To identify each entity, we will give an ID to each and every entity type.
 * Read and Clicked maintains the asked metadata.
 
-## API ##
+## Hosted URL ##
 
 
+Website functions:
+* Login with credentials
+  abilash@gmail.com abilash@123
+  krish@gmail.com krish@123
+  harry@gmail.com harry@123
+  john@gmail.com john@123  (There are many more in db use any one)
 
-## Performance Metrics ##
+* Add course
+  * It acts as a teacher here since the project is not fully completed.
+  * Adding a course will add courses to all the students and they get notifications.
+
+* Notification
+  * Clicking the notification will redirect to another page since iam working with it to show it as a dropdown.
+  * Click back
+
+* Logout
+  * Press logout and check if the course is added to other students.
