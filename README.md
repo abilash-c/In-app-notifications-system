@@ -22,7 +22,7 @@ Website functions:
   john@gmail.com john@123  (There are many more in db use any one)
 
 * Add course
-  * It acts as a teacher here since the project is not fully completed.
+  * It acts as a teacher here. The project is not fully completed.
   * Adding a course will add courses to all the students and they get notifications.
 
 * Notification
