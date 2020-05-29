@@ -16,9 +16,9 @@ Login page with notifications system using NodeJS with express for Examly
 
 Website functions:
 * Login with credentials
-  abilash@gmail.com abilash@123
-  krish@gmail.com krish@123
-  harry@gmail.com harry@123
+  abilash@gmail.com abilash@123,
+  krish@gmail.com krish@123,
+  harry@gmail.com harry@123,
   john@gmail.com john@123  (There are many more in db use any one)
 
 * Add course
