@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+  <div id="particles-js">
+    <canvas class="particles-js-canvas-el"  style="width: 100%; height: 100%;">
+    </canvas>
+  </div> 
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-sm-5 bg-light border rounded py-3">
+                <h2 class="text-center">Login</h2>
+                <form action="" method="POST">
+                    <div class="form-group">
+                      <label for="_email">Email</label>
+                      <input type="text" name="user_email" id="_email" class="form-control" placeholder="Email" rnodeequired>
+                    </div>
+                    <div class="form-group">
+                      <label for="_pass">Password</label>
+                      <input type="password" name="user_pass" id="_pass" class="form-control" placeholder="Password" required>
+                    </div>
+                    <% if (locals.login_errors) { 
+                      login_errors.forEach(function(error_msg){ %>
+                      <div class="alert alert-danger" role="alert"><%= error_msg %></div>
+                    <% });
+                    } %>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="col-sm-6 bg-light rounded border py-3 offset-sm-1">
+              <h2 class="text-center">Add Course</h2>
+
+              <form action="/register" method="POST" novalidate>
+                      <div class="form-group">
+                        <label for="_cname" class="login-text">Course Name :</label>
+                    <input type="text" name="course_name" class="form-control">
+                    </div>
+                    <div class="form-group">
+                    <label for="_start" class="login-text">Starting Time :</label>
+                    <input type="datetime-local" name="start" class="form-control">
+                    </div>
+                    <div class="form-group">
+                    <label for="_end" class="txt">Ending Time :</label>
+                    <input type="datetime-local" name="end" class="form-control">
+                    </div>
+                    <div class="btn-box">
+                      <% if (locals.login_errors) { 
+                        login_errors.forEach(function(error_msg){ %>
+                        <div class="alert alert-danger" role="alert"><%= error_msg %></div>
+                      <% });
+                      } %>
+                    <button type="submit" class="btn btn-success">ADD</button>
+                  </form>
+          </div>
+        </div>
+    </div>
+    <script>
+      particlesJS('particles-js', {
+      'particles': {
+          'number': {
+              'value': 80,
+              'density': {
+                  'enable': true,
+                  'value_area': 800
+              }
+          },
+          'color': { 'value': '#ffffff' },
+          'shape': {
+              'type': 'circle',
+              'stroke': {
+                  'width': 0,
+                  'color': '#000000'
+              },
+              'polygon': { 'nb_sides': 5 },
+              'image': {
+                  'src': 'img/github.svg',
+                  'width': 100,
+                  'height': 100
+              }
+          },
+          'opacity': {
+              'value': 0.5,
+              'random': false,
+              'anim': {
+                  'enable': false,
+                  'speed': 1,
+                  'opacity_min': 0.1,
+                  'sync': false
+              }
+          },
+          'size': {
+              'value': 3,
+              'random': true,
+              'anim': {
+                  'enable': false,
+                  'speed': 40,
+                  'size_min': 0.1,
+                  'sync': false
+              }
+          },
+          'line_linked': {
+              'enable': true,
+              'distance': 150,
+              'color': '#ffffff',
+              'opacity': 0.4,
+              'width': 1
+          },
+          'move': {
+              'enable': true,
+              'speed': 6,
+              'direction': 'none',
+              'random': false,
+              'straight': false,
+              'out_mode': 'out',
+              'bounce': false,
+              'attract': {
+                  'enable': false,
+                  'rotateX': 600,
+                  'rotateY': 1200
+              }
+          }
+      },
+      'interactivity': {
+          'detect_on': 'canvas',
+          'events': {
+              'onhover': {
+                  'enable': true,
+                  'mode': 'grab'
+              },
+              'onclick': {
+                  'enable': true,
+                  'mode': 'push'
+              },
+              'resize': true
+          },
+          'modes': {
+              'grab': {
+                  'distance': 140,
+                  'line_linked': { 'opacity': 1 }
+              },
+              'bubble': {
+                  'distance': 400,
+                  'size': 40,
+                  'duration': 2,
+                  'opacity': 8,
+                  'speed': 3
+              },
+              'repulse': {
+                  'distance': 200,
+                  'duration': 0.4
+              },
+              'push': { 'particles_nb': 4 },
+              'remove': { 'particles_nb': 2 }
+          }
+      },
+      'retina_detect': true
+      });
+      </script>
+</body>
+</html>
