@@ -12,7 +12,7 @@ Login page with notifications system using NodeJS with express for Examly
 * Read and Clicked maintains the asked metadata.
 
 ## Hosted URL ##
-
+## https://in-app-notification-examly.herokuapp.com/ ##
 
 Website functions:
 * Login with credentials
